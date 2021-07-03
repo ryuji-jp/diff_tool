@@ -1,0 +1,41 @@
+*** output/output_device2_171209.txt
+--- output/config_device2_171239.log
+***************
+*** 1,8 ****
+- 
+  interfaces {
+      ethernet eth0 {
+!         address 192.168.2.90/24
+!         hw-id 00:0c:29:20:3a:ae
+      }
+      loopback lo {
+      }
+--- 1,7 ----
+  interfaces {
+      ethernet eth0 {
+!         address 192.168.2.91/24
+!         hw-id 00:0c:29:9f:7e:3b
+      }
+      loopback lo {
+      }
+***************
+*** 10,17 ****
+  protocols {
+      static {
+          route 0.0.0.0/0 {
+-             next-hop 192.168.1.254 {
+-             }
+              next-hop 192.168.2.253 {
+              }
+          }
+--- 9,14 ----
+***************
+*** 19,24 ****
+--- 16,22 ----
+  }
+  service {
+      ssh {
++         port 22
+      }
+  }
+  system {
